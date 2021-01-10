@@ -12,4 +12,28 @@ Following this tutorial video : https://youtu.be/-2LtZRi6Q0s
 ![chrome-capture](https://user-images.githubusercontent.com/51708229/104118077-91ef9080-5369-11eb-8586-82c2d491c309.gif)
 </details>
 
+***
+
+## What I learned + What I had a hard time with
+
+- Creating gradient colored border around a button.
+
+```css:style.css
+.playBtnInner {
+  border: 0.2rem solid transparent;
+  border-radius: 50%;
+  background-image: #42455a;  /* fallback for old browsers */
+  background-image: -webkit-linear-gradient(to right, #42455a,#42455a), -webkit-radial-gradient(circle at top left, var(--pink), var(--purple));  /* Chrome 10-25, Safari 5.1-6 */
+  background-image: linear-gradient(to right, #42455a,#42455a), radial-gradient(circle at top left, var(--pink), var(--purple)); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background-origin: border-box;
+  background-clip: padding-box, border-box;
+}
+```
+- `border-radius: 50%` does not necessarily make a perfect circle.
+needed to set a element width and height to the same size. (not sure)
+
+
+
+
+
 

@@ -1,0 +1,187 @@
+/* Spoqa Han Sans */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.showcase {
+  width: 100vw;
+  height: 100vh;
+  padding: 60px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+  color: #fff;
+  overflow: hidden;
+}
+
+.showcase::before {
+  content: '';
+  background: url(https://lv2-cdn.azureedge.net/twice/669d1fab165d4f14862e250fc786e480-PC.jpg) no-repeat center/cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#logoWH, #logoBK {
+  position: relative;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+}
+
+#logoBK {
+  visibility: hidden;
+}
+
+h1 {
+  width: 500px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  font-size: 80px;
+  position: relative;
+  top: 3.9vh;
+  left: 68vw;
+  cursor: pointer;
+}
+
+.line {
+  width: 150px;
+  background-color: #fff;
+  height: 1px;
+  position: relative;
+  top: 12vh;
+  left: 83vw;
+}
+
+.playBtn {
+  position: absolute;
+  top: 46vh;
+  left: 48vw;
+  width: 70px;
+  height: 70px;
+  border: 1.5px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 3px;
+  cursor: pointer;
+}
+
+.playBtn:hover {
+  transform: scale(0.9);
+  transition: all 0.2s ease-out;
+}
+
+.playBtn > i {
+  padding: 1.5rem 0;
+}
+
+
+.socialIcons ul {
+  position: relative;
+  top: 300px;
+  bottom: 0;
+  left: 0;
+}
+
+.socialIcons > ul > li {
+  display: block;
+  list-style-type: none;
+  text-align: left;
+  margin-top: 20px;
+  padding-top: 5px;
+  cursor: pointer;
+}
+
+.socialIcons > ul > li:hover {
+  transform: translateX(5px);
+  transition: transform 0.7s;
+}
+
+footer {
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10px;
+  position: absolute;
+  bottom: 60px;
+  right: 60px;
+}
+
+footer span {
+  color: turquoise;
+}
+
+.showcase .container .toggler {
+  position: absolute;
+  top: 60px;
+  right: 60px;
+  z-index: 2;
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+}
+
+.showcase .container .hamburger {
+  position: absolute;
+  top: 60px;
+  right: 60px;
+  z-index: 1;
+  width: 2.82rem;
+  height: 2.82rem;
+  padding: 0.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hamburger Line */
+.showcase .container .hamburger > div {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.showcase .container .hamburger > div::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  top: -7px;
+  z-index: 1;
+  background-color: inherit;
+}
+
+.showcase .container .hamburger > div::after {
+  content: '';
+  position: absolute;
+  width: 70%;
+  height: 2px;
+  top: 7px;
+  right: 0;
+  z-index: 1;
+  background-color: inherit;
+}
+
+/* When toggler checked */
+.showcase .container .toggler:checked + .hamburger > div {
+  transform: rotate(135deg);
+  background-color: #333333;
+}
+
+.showcase .container .toggler:checked + .hamburger > div::before {
+  transform: rotate(90deg);
+  top: 0;
+  background-color: inherit;
+}
+
+.showcase .container .toggler:checked + .hamburger > div::after {
+  background-color: initial;
+}

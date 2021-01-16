@@ -15,3 +15,14 @@ Try to replicate the following page from scratch.  https://twice.jype.com/Defaul
 ![image](https://user-images.githubusercontent.com/51708229/104444680-78557f80-55db-11eb-8d5b-fdc1b8d6bc2b.png)
 </details>
 
+
+#### My Solution
+![chrome-capture-min](https://user-images.githubusercontent.com/51708229/104796880-64896380-57fd-11eb-9970-7439628252b7.gif)
+
+<hr>
+
+## What I learned + What I had a hard time with
+- Figure out how to make a menu transition. (Attemped to implement it with CSS only, but cannot find the way.)
+- How to put a favicon.
+- As making hamburger lines using `::before` `::after` pseudo, it didn't appear unless setting `display` property.
+- To make a checkbox (toggler) clickable, it needed to be the top of every elements.

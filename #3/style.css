@@ -30,11 +30,10 @@
   position: relative;
   top: 0;
   left: 0;
-  cursor: pointer;
 }
 
-#logoBK {
-  visibility: hidden;
+img {
+  cursor: pointer;
 }
 
 h1 {
@@ -80,7 +79,7 @@ h1 {
 }
 
 
-.socialIcons ul {
+.socialIcons > ul {
   position: relative;
   top: 300px;
   bottom: 0;
@@ -93,12 +92,12 @@ h1 {
   text-align: left;
   margin-top: 20px;
   padding-top: 5px;
-  cursor: pointer;
 }
 
-.socialIcons > ul > li:hover {
+.socialIcons > ul > li > i:hover {
   transform: translateX(5px);
   transition: transform 0.7s;
+  cursor: pointer;
 }
 
 footer {
@@ -108,6 +107,7 @@ footer {
   position: absolute;
   bottom: 60px;
   right: 60px;
+  font-weight: 600;
 }
 
 footer span {
@@ -118,7 +118,7 @@ footer span {
   position: absolute;
   top: 60px;
   right: 60px;
-  z-index: 2;
+  z-index: 3;
   cursor: pointer;
   width: 50px;
   height: 50px;
@@ -170,18 +170,4 @@ footer span {
   background-color: inherit;
 }
 
-/* When toggler checked */
-.showcase .container .toggler:checked + .hamburger > div {
-  transform: rotate(135deg);
-  background-color: #333333;
-}
 
-.showcase .container .toggler:checked + .hamburger > div::before {
-  transform: rotate(90deg);
-  top: 0;
-  background-color: inherit;
-}
-
-.showcase .container .toggler:checked + .hamburger > div::after {
-  background-color: initial;
-}

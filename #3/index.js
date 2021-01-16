@@ -8,5 +8,3 @@ toggler.addEventListener('click', () => {
     menuWrap.style.transform = 'none';
   }
 });
-
-

@@ -5,7 +5,9 @@ Try to replicate the following page from scratch.  https://twice.jype.com/Defaul
 
 <details>
   <summary>Screen capture</summary>
+  
 - **First View**
+  
 ![image](https://user-images.githubusercontent.com/51708229/104444659-6d9aea80-55db-11eb-9a8b-cd50db2aa7e5.png)
 <br>
 

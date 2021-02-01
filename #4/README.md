@@ -8,7 +8,7 @@ Original: https://github.com/codeSTACKr/portfolio-sass/tree/master/dist
 - how to create a hamburger button with `::before` `::after` pseudo classes. *review
 - manipulating the duration time using the syntax like below.
 
-```
+```scss
 @for $i from 1 through 4 {
   .menuNav_item:nth-child(#{$i}) {
     transition-delay: ($i * 0.1s) + .15s;
@@ -18,7 +18,7 @@ Original: https://github.com/codeSTACKr/portfolio-sass/tree/master/dist
 
 - putting the function inside the function hack.
 
-```
+```scss
 &:hover {
       color: setTextColor(setTextColor($secondary-color));
     }

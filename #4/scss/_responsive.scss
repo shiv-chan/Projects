@@ -1,0 +1,69 @@
+// for a medium screen
+@include media-md {
+	.menuBtn {
+		visibility: hidden;
+	}
+
+	.nav {
+		visibility: visible;
+
+		.menuNav {
+			display: block;
+			transform: translateY(0);
+			height: 100%;
+			background-color: transparent;
+			text-align: right;
+
+			&_item {
+				display: inline;
+				padding-right: 1.5rem;
+			}
+
+			&_link {
+				font-size: 1.5rem;
+			}
+		}
+	}
+
+	.aboutBio {
+		font-size: 1.5rem;
+	}
+
+	.projects {
+		&_bioImage {
+			height: 40vh;
+		}
+
+		&Items {
+			grid-template-columns: repeat(2, 1fr);
+		}
+
+		.textSecondary {
+			font-size: 3rem;
+		}
+	}
+
+	.contactList {
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
+
+// for a large screen
+@include media-lg {
+	.projects {
+		&Items {
+			grid-template-columns: repeat(3, 1fr);
+		}
+	}
+
+	.contactList {
+		grid-template-columns: repeat(3, 1fr);
+	}
+}
+
+// for a extra large screen
+@include media-xl {
+	.projects_bioImage {
+		height: 50vh;
+	}
+}

@@ -1,2 +1,2 @@
-# Websites
-Coding practice to create websites.
+# Projects
+Coding practice by building projects.

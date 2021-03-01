@@ -69,9 +69,6 @@ main {
 				line-height: 45px;
 				margin-bottom: 4rem;
 				max-height: 400px;
-				overflow: hidden;
-				//white-space: nowrap;
-				text-overflow: ellipsis;
 
 				&::before {
 					content: open-quote;
@@ -98,7 +95,9 @@ main {
 
 @media screen and (max-width: 1200px) {
 	.container {
-		width: 500px;
+		width: 100%;
+		max-width: 500px;
+		padding-bottom: 0.5rem;
 	}
 
 	header {

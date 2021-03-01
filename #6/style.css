@@ -92,8 +92,6 @@ main figure blockquote p.quote {
   line-height: 45px;
   margin-bottom: 4rem;
   max-height: 400px;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 main figure blockquote p.quote::before {
@@ -118,7 +116,9 @@ main figure img {
 
 @media screen and (max-width: 1200px) {
   .container {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
+    padding-bottom: 0.5rem;
   }
   header {
     -webkit-box-orient: vertical;

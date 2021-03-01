@@ -22,7 +22,7 @@ section {
 }
 
 section img {
-	position: absolute;
+  position: absolute;
 	top: 0;
 	left: 0;
 	width: 100%;
@@ -30,6 +30,7 @@ section img {
 	object-fit: cover;
 	pointer-events: none;
 }
+
 
 section:before {
   position: absolute;
@@ -62,4 +63,41 @@ section:after {
 
 #road {
   z-index: 2;
+}
+
+article {
+  color: #fff;
+  margin: 10rem auto;
+  width: 50%;
+}
+
+article h1 {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 1200px){
+  section img#moon {
+    object-position: 80%;
+  }
+
+  #title {
+    font-size: 8rem;
+  }
+}
+
+@media screen and (max-width: 768px){
+  section img#moon {
+    object-position: 90%;
+  }
+
+  #title {
+    padding: 1rem;
+    font-size: 5rem;
+  }
+}
+
+@media screen and (max-width: 425px){
+  section img#road {
+    object-position: 70%;
+  }
 }

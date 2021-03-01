@@ -3,7 +3,6 @@ const quote = document.querySelector('.quote');
 const author = document.querySelector('.author');
 const image = document.querySelector('img');
 
-
 const getQuote = () => {
 	fetch('https://quotes15.p.rapidapi.com/quotes/random/?language_code=en', {
 		method: 'GET',
@@ -13,25 +12,29 @@ const getQuote = () => {
 		},
 	})
 		.then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      let content = data.content;
-      let name = data.originator.name;
-      if(quote.innerText.length >= 200){
+			return response.json();
+		})
+		.then((data) => {
+			let content = data.content;
+			let name = data.originator.name;
+			let quoteLength = content.length;
+      console.log(quoteLength);
+
+      if(quoteLength >= 200){
         getQuote();
-      } else if(quote.innerText.length >= 130){
-        quote.style.fontSize = '30px';
-      } else {
-        quote.style.fontSize = '40px';
-      }
-      quote.textContent = content;
-      author.textContent = name;
-    })
+      } else if (quoteLength >= 130) {
+				quote.style.fontSize = '30px';
+				quote.textContent = content;
+				author.textContent = name;
+			} else {
+				quote.style.fontSize = '40px';
+				quote.textContent = content;
+				author.textContent = name;
+			}
+		})
 		.catch((err) => {
 			console.error(err);
 		});
 };
 
 button.addEventListener('click', getQuote);
-

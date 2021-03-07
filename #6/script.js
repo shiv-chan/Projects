@@ -20,14 +20,16 @@ const getQuote = () => {
 			let quoteLength = content.length;
       console.log(quoteLength);
 
-      if(quoteLength >= 200){
+      if(quoteLength >= 170){
+        quote.textContent = 'Live as if you were to die tomorrow. Learn as if you were to live forever.';
+        author.textContent = 'Mahatma Gandhi';
         getQuote();
-      } else if (quoteLength >= 130) {
-				quote.style.fontSize = '30px';
+      } else if (quoteLength >= 100) {
+				quote.style.fontSize = '70%';
 				quote.textContent = content;
 				author.textContent = name;
 			} else {
-				quote.style.fontSize = '40px';
+				quote.style.fontSize = 'inherit';
 				quote.textContent = content;
 				author.textContent = name;
 			}

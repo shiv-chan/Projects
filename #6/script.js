@@ -2,12 +2,13 @@ const button = document.querySelector('button');
 const quote = document.querySelector('.quote');
 const author = document.querySelector('.author');
 const image = document.querySelector('img');
+const apikey = config.API_KEY;
 
 const getQuote = () => {
 	fetch('https://quotes15.p.rapidapi.com/quotes/random/?language_code=en', {
 		method: 'GET',
 		headers: {
-			'x-rapidapi-key': 'e90990507dmsh32b14662e668ce1p129b4djsn82d55c574a62',
+			'x-rapidapi-key': apikey,
 			'x-rapidapi-host': 'quotes15.p.rapidapi.com',
 		},
 	})
